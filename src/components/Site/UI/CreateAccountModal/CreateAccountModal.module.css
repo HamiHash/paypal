@@ -1,0 +1,63 @@
+.overlayContainer {
+  z-index: 2;
+  position: fixed;
+  /* top: 30vh; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.backdrop {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 5rem;
+}
+
+.overlay p {
+  padding: 2rem 3rem;
+  font-size: 3.25rem;
+}
+
+.overlay form {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  width: 90%;
+}
+
+.overlay form input {
+  width: 100%;
+  height: 4rem;
+  border-radius: 8px;
+}
+
+.overlay button {
+  margin-top: 2.5rem;
+  grid-column: 1/-1;
+  justify-self: center;
+  font-size: 2.5rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 25rem;
+}

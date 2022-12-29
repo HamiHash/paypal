@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav p {
+  font-size: 2rem;
+}
+
+.nav img {
+  width: 15rem;
+}
+
+.nav div {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #ddd;
+}
